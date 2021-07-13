@@ -1,16 +1,19 @@
-package com.wolox;
+package com.wolox
 
-import com.wolox.docker.DockerConfiguration;
-import com.wolox.steps.Steps;
+import com.wolox.docker.DockerConfiguration
+import com.wolox.os.*
+import com.wolox.steps.*
+import com.wolox.tasks.*
 
 class ProjectConfiguration {
-    def environment;
-    def services;
-    Steps steps;
-    def dockerfile;
-    def projectName;
-    def buildNumber;
-    DockerConfiguration dockerConfiguration;
-    def env;
-    def timeout;
+    def environment
+    def services
+    Tasks tasks
+    def dockerfile
+    def projectName
+    def description
+    def buildNumber
+    DockerConfiguration dockerConfiguration
+    def env
+    def timeout
 }
